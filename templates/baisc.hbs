@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <div class="resume">
+            <div class="resume_personal-details">
+                <section>
+                    <h1>{{name}}</h1>
+                    <h5>Contact No: {{contact}}</h5>
+                    <h6>Email: {{email}}</h6>
+                </section>
+                <section>
+                    <h5>LinkedIn: {{LinkedIn}}</h5>
+                    <h6>Github: {{github}}</h6>
+                </section>
+            </div>
+            <div class="resume_experience">
+                {{#each experience}}
+                    <section class="experience_company">
+                        <h1>{{companyName}}</h1>
+                        <h6>{{position}}</h6>
+                        <p>
+                            {{jobDescription}}
+                        </p>
+                        {{#if current}}
+                            <h6>{{from}} - present</h6>
+                        {{else}}
+                            <h6>{{from}} - {{to}}</h6>
+                        {{/if}}
+                    </section>
+                {{/each}}
+            </div>
+        </div>
+    </body>
+</html>

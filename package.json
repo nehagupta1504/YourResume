@@ -18,8 +18,10 @@
     },
     "homepage": "https://github.com/nehagupta1504/YourResume#readme",
     "dependencies": {
+        "cors": "^2.8.5",
         "dotenv": "^16.0.3",
         "express": "^4.18.2",
+        "file-saver": "^2.0.5",
         "handlebars": "^4.7.7",
         "handlebars-pdf": "^1.0.1",
         "hbs": "^4.2.0",

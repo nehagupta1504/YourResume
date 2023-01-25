@@ -8,8 +8,12 @@
                     <h6>Email: {{email}}</h6>
                 </section>
                 <section>
-                    <h5>LinkedIn: {{LinkedIn}}</h5>
-                    <h6>Github: {{github}}</h6>
+                    {{#if linkedIn}}
+                        <h5>LinkedIn: {{linkedIn}}</h5>
+                    {{/if}}
+                    {{#if github}}
+                        <h6>Github: {{github}}</h6>
+                    {{/if}}
                 </section>
             </div>
             <div class="resume_experience">

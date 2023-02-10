@@ -221,9 +221,12 @@ progress::-webkit-progress-value {
 
 .timeline .timeline-text {
     font-size: 14px;
+    margin-bottom: 0.5rem;
 }
 .timeline-event {
     position: relative;
+    border-bottom: 1px solid rgb(73 128 174);
+    margin-bottom: 2px;
 }
 .timeline-event::before {
     position: absolute;
@@ -254,4 +257,11 @@ progress::-webkit-progress-value {
     left: -190px;
     top: 27px;
     font-size: 13px;
+}
+.section-right-heading {
+    color: var(--light-theme);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
